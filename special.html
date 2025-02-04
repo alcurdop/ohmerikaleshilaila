@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starry Love for Laila 🌌</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: black;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: white;
+        }
+
+        .stars {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url('https://i.imgur.com/3Qy5fXt.png') repeat;
+            animation: twinkle 10s infinite;
+        }
+
+        @keyframes twinkle {
+            0% { opacity: 0.8; }
+            50% { opacity: 1; }
+            100% { opacity: 0.8; }
+        }
+
+        .message {
+            position: relative;
+            font-size: 2rem;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+            animation: glow 2s infinite alternate;
+        }
+
+        @keyframes glow {
+            0% { text-shadow: 0 0 10px rgba(255, 255, 255, 0.6); }
+            100% { text-shadow: 0 0 25px rgba(255, 255, 255, 1); }
+        }
+
+        .back-button {
+            margin-top: 30px;
+            padding: 10px 20px;
+            background: #ff4b5c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .back-button:hover {
+            background: #ff7b8f;
+        }
+    </style>
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="message">
+        "Laila, you are my moon in the night, my star in the sky.  
+        My love for you shines forever. ✨💖"
+    </div>
+    <button class="back-button" onclick="goBack()">Back</button>
+
+    <script>
+        function goBack() {
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>
